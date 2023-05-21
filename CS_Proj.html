@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset = "utf-8" />
+		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel = "icon" type = "image/jpg" href = "woww.jpg">
+		
+		<title> Classical Physics </title>
+	</head>
+	
+	<body class="body1">
+		<nav>
+				<label id="home" class="title"><a href="https://www.dictionary.com/browse/classical-physics#:~:text=Classical%20physics%20involves%20classical%20mechanics,magnets%2C%20and%20electromagnetic%20waves)."> 
+					Classical <i>Physics</i> </a> </label>
+			<ul>
+				<li><a href="#home" class="opt">HOME</a></li>
+				<li><a href="Mechanics.html" class="opt">MECHANICS</a></li>
+				<li><a href="Electromagnetism.html" class="opt">ELECTROMAGNETISM</a></li>
+				<li><a href="Thermodynamics.html" class="opt">THERMODYNAMICS</a></li>
+			</ul>
+			<button onclick="document.getElementById('id01').style.display='block'" class="login">Login?</button>
+		</nav>
+		
+		<div id="id01" class="modal">
+			<form class="modal-content">
+			<div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>
+
+		<div class="container">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+        
+			<button type="submit">Login</button>
+			<label> <input type="checkbox" checked="checked" name="remember"> Remember me </label>
+		</div>
+
+    <div class="container" style="background-color:#F0EAD6">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="background-color:#FAA0A0">Cancel</button>
+    </div>
+  </form>
+</div>
+	</body>
+	
+	<script>
+		var modal = document.getElementById('id01');
+	</script>
+</html>
